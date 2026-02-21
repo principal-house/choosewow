@@ -1,19 +1,60 @@
 ---
 interface Props { compact?: boolean; }
 const { compact = false } = Astro.props;
+const LISTMONK_URL = "https://mail.principal.house";
+const LIST_UUID = "8084bc39-7292-4443-ab90-c09cf4bbbb9e"; // ChooseWow list
 ---
 
-<form action="MAILERLITE_FORM_ACTION_URL" method="POST" class:list={["nl-form", { compact }]}>
-	<input type="hidden" name="group" value="MAILERLITE_GROUP_ID" />
-	<div class="nl-input-row">
-		<input type="email" name="email" placeholder="your@email.com" required aria-label="Email address" />
-		<button type="submit">Join</button>
-	</div>
-	{!compact && <p class="nl-privacy">Weekly inspiration. No spam. Unsubscribe anytime.</p>}
-</form>
+<div class="nl-wrapper">
+	<form class="nl-form" class:list={[{ compact }]} id="nl-form">
+		<div class="nl-input-row">
+			<input type="email" name="email" placeholder="your@email.com" required aria-label="Email address" id="nl-email" />
+			<button type="submit" id="nl-btn">Join</button>
+		</div>
+		{!compact && <p class="nl-privacy">Weekly inspiration. No spam. Unsubscribe anytime.</p>}
+	</form>
+	<p class="nl-message" id="nl-message" style="display:none;"></p>
+</div>
+
+<script define:vars={{ LISTMONK_URL, LIST_UUID }}>
+	const form = document.getElementById('nl-form');
+	const msg = document.getElementById('nl-message');
+	const btn = document.getElementById('nl-btn');
+	const emailInput = document.getElementById('nl-email');
+
+	form.addEventListener('submit', async (e) => {
+		e.preventDefault();
+		const email = emailInput.value.trim();
+		if (!email) return;
+
+		btn.disabled = true;
+		btn.textContent = '...';
+
+		try {
+			const res = await fetch(`${LISTMONK_URL}/subscription/form`, {
+				method: 'POST',
+				mode: 'no-cors',
+				headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+				body: new URLSearchParams({ email, l: LIST_UUID, nonce: '' }),
+			});
+			// no-cors means we can't read the response, but the subscription is created
+			form.style.display = 'none';
+			msg.style.display = 'block';
+			msg.textContent = '🎉 Check your inbox to confirm your subscription!';
+			msg.className = 'nl-message nl-success';
+		} catch (err) {
+			msg.style.display = 'block';
+			msg.textContent = 'Something went wrong. Please try again.';
+			msg.className = 'nl-message nl-error';
+			btn.disabled = false;
+			btn.textContent = 'Join';
+		}
+	});
+</script>
 
 <style>
-	.nl-form { margin-top: 1.5em; }
+	.nl-wrapper { margin-top: 1.5em; }
+	.nl-form.compact { margin-top: 0; }
 	.nl-input-row {
 		display: flex;
 		gap: 0.5em;
@@ -45,10 +86,27 @@ const { compact = false } = Astro.props;
 		transition: opacity 0.15s;
 	}
 	.nl-input-row button:hover { opacity: 0.85; }
+	.nl-input-row button:disabled { opacity: 0.5; cursor: wait; }
 	.nl-privacy {
 		margin: 0.6em 0 0;
 		font-size: 0.75em;
 		color: var(--text-faint);
+	}
+	.nl-message {
+		font-size: 0.9em;
+		padding: 0.8em 1em;
+		border-radius: 6px;
+		max-width: 420px;
+	}
+	.nl-success {
+		background: rgba(34, 197, 94, 0.1);
+		color: #16a34a;
+		border: 1px solid rgba(34, 197, 94, 0.2);
+	}
+	.nl-error {
+		background: rgba(239, 68, 68, 0.1);
+		color: #dc2626;
+		border: 1px solid rgba(239, 68, 68, 0.2);
 	}
 	@media (max-width: 480px) {
 		.nl-input-row { flex-direction: column; }
