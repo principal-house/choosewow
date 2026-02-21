@@ -2,6 +2,7 @@
 title: 'What Nobody Tells You About Starting a Journaling Habit'
 description: 'Everyone says you should journal. Almost nobody tells you what it actually feels like to start.'
 pubDate: '2026-01-10'
+heroImage: '../../assets/blog/journaling-start.png'
 ---
 
 Everyone says you should journal. Almost nobody tells you what it actually feels like to start.

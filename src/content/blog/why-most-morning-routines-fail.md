@@ -2,6 +2,7 @@
 title: 'Why Most Morning Routines Fail (And What to Do Instead)'
 description: 'You don''t need to wake up at 5am, meditate, journal, exercise, and read before breakfast. You need one anchor habit that actually sticks.'
 pubDate: '2026-02-05'
+heroImage: '../../assets/blog/morning-routines.png'
 ---
 
 Every January, the internet fills with morning routine content. Wake up at 5am. Cold shower. Meditate for 20 minutes. Journal. Exercise. Read 10 pages. Drink a green smoothie. All before 7am.

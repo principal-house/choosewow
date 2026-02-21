@@ -2,6 +2,7 @@
 title: 'The 6 AM Experiment That Changed How I See My Days'
 description: 'I gave myself one hour before the world woke up. What happened in that silence surprised me more than any productivity hack ever did.'
 pubDate: '2026-02-21'
+heroImage: '../../assets/blog/6am-experiment.png'
 ---
 
 I've read every morning routine article on the internet. I've tried the 5am club, the cold showers, the meditation-then-journaling-then-exercise stack that looks beautiful on paper and collapses by Wednesday.
