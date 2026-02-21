@@ -1,7 +1,7 @@
 ---
 title: 'The 90-Day Gratitude Experiment That Changed How I See Everything'
 description: 'I thought gratitude journaling was soft. Then I tried it for 90 days straight and something shifted that I can''t undo.'
-pubDate: '2026-02-21'
+pubDate: '2026-02-13'
 ---
 
 I'll be honest — I resisted this for years.

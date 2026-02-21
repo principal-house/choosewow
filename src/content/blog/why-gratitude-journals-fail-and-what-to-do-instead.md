@@ -1,7 +1,7 @@
 ---
 title: 'Why Most Gratitude Journals Fail (And What to Do Instead)'
 description: 'Writing "I''m grateful for my health" for the 90th day in a row isn''t gratitude — it''s autopilot. Here''s the one shift that makes the practice actually work.'
-pubDate: '2026-02-18'
+pubDate: '2026-01-28'
 ---
 
 I'll be honest with you. I tried gratitude journaling 4 separate times before it stuck. Four times I bought a notebook, wrote "3 things I'm grateful for" on day 1, kept it up for maybe 12 days, and then the notebook disappeared into a drawer.

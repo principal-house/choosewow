@@ -1,7 +1,7 @@
 ---
 title: 'The Habit That Survives When Motivation Dies'
 description: 'I''ve built and broken more habits than I can count. Here''s the one pattern that separates the ones that stick from the ones that don''t.'
-pubDate: '2026-02-14'
+pubDate: '2026-01-19'
 ---
 
 Let me tell you about my graveyard of abandoned habits.
