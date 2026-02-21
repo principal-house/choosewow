@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
 
 :root {
-	--bg: #0d0d0b;
-	--bg-raised: #151513;
-	--bg-hover: #1c1c18;
-	--border: #252520;
-	--border-light: #1e1e1a;
-	--text: #f0ebe3;
-	--text-muted: #9a9488;
-	--text-faint: #65605a;
-	--accent: #e8944a;
-	--accent-hover: #f0a45e;
-	--accent-faint: rgba(232, 148, 74, 0.1);
-	--accent-warm: #d4763a;
+	--bg: #faf8f3;
+	--bg-raised: #ffffff;
+	--bg-hover: #f3f0e8;
+	--border: #e8e4da;
+	--border-light: #f0ece4;
+	--text: #1a1a1a;
+	--text-muted: #6b7280;
+	--text-faint: #9ca3af;
+	--accent: #c99a2e;
+	--accent-hover: #b8891f;
+	--accent-light: #e8b84b;
+	--accent-faint: rgba(201, 154, 46, 0.1);
 }
 
 * { box-sizing: border-box; }
@@ -53,11 +53,11 @@ h4 { font-size: 1.15em; }
 strong, b { font-weight: 600; }
 
 a {
-	color: var(--accent);
+	color: var(--accent-hover);
 	text-decoration: none;
 	transition: color 0.15s ease;
 }
-a:hover { color: var(--accent-hover); }
+a:hover { color: var(--accent); }
 
 p { margin-bottom: 1.25em; }
 
@@ -80,17 +80,18 @@ code {
 	border: 1px solid var(--border);
 	border-radius: 4px;
 	font-size: 0.88em;
-	color: var(--accent);
+	color: var(--accent-hover);
 }
 
 pre {
 	padding: 1.5em;
 	border-radius: 8px;
-	background: var(--bg-raised) !important;
+	background: #2d2d2d !important;
+	color: #f0ebe3;
 	border: 1px solid var(--border);
 	overflow-x: auto;
 }
-pre > code { all: unset; font-size: 0.88em; }
+pre > code { all: unset; font-size: 0.88em; color: #f0ebe3; }
 
 blockquote {
 	border-left: 2px solid var(--accent);
