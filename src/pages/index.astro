@@ -1,0 +1,176 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import { getCollection } from 'astro:content';
+import NewsletterForm from '../components/NewsletterForm.astro';
+import FormattedDate from '../components/FormattedDate.astro';
+
+const posts = (await getCollection('blog')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<section class="hero">
+				<p class="eyebrow">Gratitude · Habits · Intentional Living</p>
+				<h1>Live your life<br />with arms<br /><span class="accent">wide open</span>.</h1>
+				<p class="subtitle">
+					Real stories about choosing gratitude, building better habits, and finding the extraordinary in ordinary days. No guru talk — just what actually works.
+				</p>
+				<NewsletterForm compact />
+			</section>
+
+			<section class="author-bar">
+				<div class="author-info">
+					<div class="author-avatar">JR</div>
+					<div>
+						<p class="author-name">Janis Rozenblats</p>
+						<p class="author-role">Entrepreneur · Father · Lifelong Experimenter</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="posts">
+				<div class="section-label">Latest</div>
+				{posts.map((post) => (
+					<a href={`/blog/${post.id}/`} class="post-card">
+						<div class="post-content">
+							<h3>{post.data.title}</h3>
+							<p class="post-desc">{post.data.description}</p>
+						</div>
+						<div class="post-meta">
+							<FormattedDate date={post.data.pubDate} />
+						</div>
+					</a>
+				))}
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.hero {
+		padding: 4em 0 3em;
+	}
+	.eyebrow {
+		font-size: 0.8em;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		color: var(--accent);
+		font-weight: 600;
+		margin-bottom: 1.25em;
+	}
+	.hero h1 {
+		font-size: 3em;
+		letter-spacing: -0.04em;
+		line-height: 1.1;
+		margin-bottom: 0.75em;
+		color: var(--text);
+	}
+	.accent {
+		color: var(--accent);
+	}
+	.subtitle {
+		font-size: 1.1em;
+		color: var(--text-muted);
+		line-height: 1.7;
+		max-width: 520px;
+		margin: 0;
+	}
+
+	.author-bar {
+		padding: 1.5em 0;
+		border-top: 1px solid var(--border);
+		border-bottom: 1px solid var(--border);
+		margin-bottom: 3em;
+	}
+	.author-info {
+		display: flex;
+		align-items: center;
+		gap: 0.85em;
+	}
+	.author-avatar {
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		background: var(--accent-faint);
+		border: 1px solid var(--accent);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 0.8em;
+		font-weight: 700;
+		color: var(--accent);
+		flex-shrink: 0;
+	}
+	.author-name {
+		margin: 0;
+		font-size: 0.9em;
+		font-weight: 600;
+		color: var(--text);
+	}
+	.author-role {
+		margin: 0;
+		font-size: 0.8em;
+		color: var(--text-muted);
+	}
+
+	.section-label {
+		font-size: 0.75em;
+		text-transform: uppercase;
+		letter-spacing: 0.12em;
+		color: var(--text-faint);
+		font-weight: 600;
+		margin-bottom: 1.5em;
+	}
+
+	.post-card {
+		display: block;
+		padding: 1.5em 0;
+		border-bottom: 1px solid var(--border);
+		text-decoration: none;
+		transition: all 0.15s ease;
+	}
+	.post-card:first-of-type {
+		border-top: 1px solid var(--border);
+	}
+	.post-card:hover {
+		padding-left: 0.75em;
+	}
+	.post-card:hover h3 {
+		color: var(--accent);
+	}
+	.post-card h3 {
+		font-size: 1.25em;
+		margin: 0 0 0.35em;
+		color: var(--text);
+		transition: color 0.15s ease;
+		letter-spacing: -0.02em;
+	}
+	.post-desc {
+		color: var(--text-muted);
+		font-size: 0.9em;
+		margin: 0;
+		line-height: 1.5;
+	}
+	.post-meta {
+		font-size: 0.78em;
+		color: var(--text-faint);
+		margin-top: 0.5em;
+	}
+
+	@media (max-width: 720px) {
+		.hero { padding: 2.5em 0 2em; }
+		.hero h1 { font-size: 2.25em; }
+	}
+</style>

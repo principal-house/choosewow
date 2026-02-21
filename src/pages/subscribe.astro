@@ -1,0 +1,116 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import NewsletterForm from '../components/NewsletterForm.astro';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title="Subscribe — Choose WOW" description="Weekly stories about gratitude, habits, and choosing to live with intention. No fluff, no guru talk." />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<section class="subscribe-page">
+				<p class="eyebrow">Newsletter</p>
+				<h1>Choose WOW Weekly</h1>
+				<p class="tagline">One email per week about living with more intention and less autopilot.</p>
+
+				<div class="value-prop">
+					<p>Every week, I share one honest story or experiment about gratitude, habits, or intentional living. Things I've actually tried — not things I read on the internet and repackaged.</p>
+					<p>If you're the kind of person who believes the quality of your life is shaped by what you pay attention to — this is for you.</p>
+				</div>
+
+				<div class="form-section">
+					<NewsletterForm />
+				</div>
+
+				<div class="what-to-expect">
+					<p class="section-label">What you'll get</p>
+					<ul>
+						<li>Simple gratitude practices that don't feel forced</li>
+						<li>Habit experiments from someone who's built and broken dozens</li>
+						<li>Stories about finding WOW moments in ordinary days</li>
+						<li>Morning routines, journaling tips, and mindset shifts that stick</li>
+					</ul>
+				</div>
+
+				<p class="author-note">Written by <strong>Janis Rozenblats</strong> — entrepreneur, father, daily gratitude practitioner.</p>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.subscribe-page {
+		padding: 4em 0;
+		max-width: 540px;
+	}
+	.eyebrow {
+		font-size: 0.8em;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		color: var(--accent);
+		font-weight: 600;
+		margin-bottom: 1em;
+	}
+	h1 {
+		font-size: 2.5em;
+		letter-spacing: -0.04em;
+		line-height: 1.1;
+		margin-bottom: 0.4em;
+	}
+	.tagline {
+		font-size: 1.15em;
+		color: var(--text-muted);
+		margin-bottom: 2em;
+	}
+	.value-prop p {
+		font-size: 0.95em;
+		color: var(--text-muted);
+		line-height: 1.7;
+		margin-bottom: 1em;
+	}
+	.form-section {
+		margin: 2.5em 0;
+		padding: 2em 0;
+		border-top: 1px solid var(--border);
+		border-bottom: 1px solid var(--border);
+	}
+	.section-label {
+		font-size: 0.75em;
+		text-transform: uppercase;
+		letter-spacing: 0.12em;
+		color: var(--text-faint);
+		font-weight: 600;
+		margin-bottom: 1em;
+	}
+	.what-to-expect ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+	.what-to-expect li {
+		padding: 0.5em 0;
+		font-size: 0.9em;
+		color: var(--text-muted);
+		border-bottom: 1px solid var(--border);
+	}
+	.what-to-expect li:last-child { border-bottom: none; }
+	.what-to-expect li::before {
+		content: "→ ";
+		color: var(--accent);
+	}
+	.author-note {
+		margin-top: 2.5em;
+		font-size: 0.85em;
+		color: var(--text-faint);
+	}
+	@media (max-width: 720px) {
+		.subscribe-page { padding: 2.5em 0; }
+		h1 { font-size: 2em; }
+	}
+</style>

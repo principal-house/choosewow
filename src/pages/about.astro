@@ -1,0 +1,123 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import NewsletterForm from '../components/NewsletterForm.astro';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title="About — Choose WOW" description="The human behind the words. Why I write about gratitude, habits, and choosing to live with arms wide open." />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<div class="about-header">
+				<div class="avatar">JR</div>
+				<h1>Janis Rozenblats</h1>
+				<p class="tagline">Entrepreneur. Father. A guy who left home at 18, lived in 8 countries, built companies, broke things, and learned that the best moments in life are the ones you choose to notice.</p>
+			</div>
+
+			<div class="prose">
+				<h2>The short version</h2>
+				<p>
+					I started my first company at 19 in Denmark. Since then I've built an email marketing platform (<strong>Mailigen</strong>) from a 12sqm office with 4 guys and pizza boxes to 40 people and a few million in revenue. Sold it to <strong>Pipedrive</strong>. Spent years inside PE-backed product leadership learning what scales and what breaks.
+				</p>
+				<p>
+					Today I lead product at a robotics company. I have a wife and a daughter who reminds me daily that the real WOW moments aren't in boardrooms.
+				</p>
+
+				<h2>Why Choose WOW</h2>
+				<p>
+					Somewhere between building companies and chasing goals, I realized I was optimizing everything except my actual experience of being alive.
+				</p>
+				<p>
+					I was good at starting things. Good at intensity. Good at saying yes to everything meaningful. And that's exactly what was killing the joy — too many fronts, not enough presence.
+				</p>
+				<p>
+					So I started a simple practice: at the end of every day, I'd write down one thing that made me go "wow." Not big achievements. Not milestones. Just moments — my daughter laughing at something absurd, a perfect cup of coffee at 6am, a conversation that shifted how I see something.
+				</p>
+				<p>
+					That practice changed me. It became the <strong><a href="https://wowday.life">WowDay Journal</a></strong> — a physical gratitude journal built around finding one WOW story every day for 90 days.
+				</p>
+				<p>
+					Choose WOW is the other half of that story. This is where I write about the habits, the mindset shifts, the experiments that actually work for living more deliberately. Not theory I read somewhere — things I've tested on myself.
+				</p>
+
+				<h2>What I can talk about (and why)</h2>
+				<p>
+					I'm not a therapist. I'm not a wellness coach. I'm a builder who's lived in 8 countries, started businesses from nothing, navigated acquisitions and corporate politics, raised a family, and learned — sometimes the hard way — that <strong>how you live matters more than what you achieve</strong>.
+				</p>
+				<p>
+					I write about gratitude because I practice it daily. I write about habits because I've built and broken dozens of them. I write about intentional living because I spent years living reactively and know what that costs.
+				</p>
+				<p>
+					My superpower isn't expertise — it's having tried enough things to know what actually sticks when the motivation fades.
+				</p>
+
+				<h2>The philosophy</h2>
+				<p>
+					"Live your life with arms wide open." That's been my mantra for years. It's on my phone wallpaper. It means: don't resist, don't overthink, don't wait for permission. Choose to see the extraordinary in ordinary days. Choose WOW.
+				</p>
+
+				<h2>Connect</h2>
+				<p>
+					<a href="https://www.linkedin.com/in/janisr/">LinkedIn</a> — I'm most active here.<br />
+					Or just subscribe below and reply to any email. I read everything.
+				</p>
+
+				<NewsletterForm />
+			</div>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.about-header {
+		padding: 3em 0 2.5em;
+		border-bottom: 1px solid var(--border);
+		margin-bottom: 2.5em;
+	}
+	.avatar {
+		width: 64px;
+		height: 64px;
+		border-radius: 50%;
+		background: rgba(232, 148, 74, 0.1);
+		border: 2px solid var(--accent);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 1.2em;
+		font-weight: 700;
+		color: var(--accent);
+		margin-bottom: 1.5em;
+	}
+	h1 {
+		font-size: 2em;
+		margin-bottom: 0.5em;
+	}
+	.tagline {
+		color: var(--text-muted);
+		font-size: 1.05em;
+		line-height: 1.7;
+		max-width: 580px;
+		margin: 0;
+	}
+	.prose h2 {
+		margin-top: 2.5em;
+		margin-bottom: 0.75em;
+		font-size: 1.25em;
+	}
+	.prose p {
+		color: var(--text-muted);
+		line-height: 1.8;
+	}
+	.prose strong { color: var(--text); }
+	.prose a {
+		color: var(--accent);
+		text-decoration: underline;
+		text-underline-offset: 3px;
+	}
+</style>
