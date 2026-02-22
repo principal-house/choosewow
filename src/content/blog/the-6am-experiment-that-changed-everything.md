@@ -27,7 +27,9 @@ So I tried something absurdly simple. I set my alarm for 6am — just one hour b
 
 No email. No Slack. No LinkedIn scrolling disguised as "staying connected." No to-do list optimization.
 
-I sat with coffee. I looked out the window. Sometimes I wrote a few lines in my journal. Sometimes I just sat there.
+I started with a glass of warm water with fresh lemon and a pinch of Himalayan salt. Not coffee — that comes later. The lemon and salt first thing does something for your body that coffee can't: it rehydrates you after 7-8 hours of sleep, supports your adrenals instead of spiking them, and the minerals from the salt help your cells actually absorb the water. I noticed within a week that the morning brain fog cleared faster than it ever did with caffeine.
+
+Then I'd sit by the window. Sometimes I wrote a few lines in my journal. Sometimes I just sat there.
 
 The first 3 days were brutal. My brain kept screaming that I was wasting time. That I should be doing something useful. That this hour could be spent on that pitch deck, that product roadmap, that email I'd been avoiding.
 
@@ -51,7 +53,7 @@ After about 2 weeks, a simple practice crystallized. Not a system — I'm allerg
 
 **2. One intention for today.** Not a goal. Not a task. An intention. "Be present in the product review." "Actually listen to what she's telling me at dinner." "Don't check email before 9am." One line. That's it.
 
-**3. Just sit.** The rest of the hour, I just sit. Read sometimes. Think sometimes. Stare at the trees sometimes. The point is the absence of input. The point is the space.
+**3. Just sit.** Warm lemon salt water in hand, I just sit. Read sometimes. Think sometimes. Stare at the trees sometimes. The point is the absence of input. The point is the space.
 
 ## 47 days later
 
@@ -71,7 +73,7 @@ If you want to try this, here's what I'd say: don't optimize it. The moment you 
 
 Don't track it in an app. Don't post about it on LinkedIn. Don't set 14 sub-goals for your "intention practice."
 
-Just wake up one hour earlier than you need to. Sit with coffee. Be quiet. See what surfaces.
+Just wake up one hour earlier than you need to. Start with a glass of warm lemon water — skip the caffeine for the first hour. Be quiet. See what surfaces.
 
 Give it 7 days before you judge it. The first 3 will feel like a waste. Day 4 or 5, you'll hear something you've been ignoring. By day 7, you'll understand why you're doing it.
 
