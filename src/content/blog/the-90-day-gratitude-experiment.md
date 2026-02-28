@@ -87,4 +87,6 @@ When you practice noticing good moments, you notice people more. You catch the s
 
 My wife stopped saying "you're not here." Because I was.
 
-I built the [WowDay Journal](https://wowday.life) because this practice was too important to keep on random notebook pages. 90 days, one WOW moment per day. That's all it takes.
+I've actually been working on the [WowDay Journal](https://wowday.life) for 11 years — it started as a personal project to capture these moments. Life happened, priorities shifted, and I took a break from it. But recently, I rediscovered those old journals and remembered why this practice mattered so much. That's why I'm driving it actively again. 
+
+90 days, one WOW moment per day. That's all it takes to shift your perception.

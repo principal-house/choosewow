@@ -5,11 +5,11 @@ pubDate: '2026-02-21'
 heroImage: '../../assets/blog/6am-experiment.png'
 ---
 
-I've read every morning routine article on the internet. I've tried the 5am club, the cold showers, the meditation-then-journaling-then-exercise stack that looks beautiful on paper and collapses by Wednesday.
+I've read every morning routine article on the internet. I was actually a 5AM club member for 10 years — watched Robin Sharma's video one night and set my alarm for 5am the next morning. Did the whole 20-20-20 minute rule religiously. This came right after reading The Power of Habit, so I was deep in the optimization mindset, installing new systems, planning everything.
 
-So when I tell you I started waking up at 6am, I know how that sounds. Another guy, another morning routine, another article about it.
+For 13 years now, I've done morning yoga as the first thing every single day. No exceptions. But here's the twist — couple years back, my Oura ring's chronotype feature told me I needed to wake up later. So I shifted to 6:30-7am. 
 
-But this one is different. Because I wasn't chasing productivity. I was chasing something I'd lost.
+Now I'm back to 6am, experimenting again. Not chasing productivity this time. I was chasing something I'd lost.
 
 ## The problem wasn't discipline
 
@@ -23,7 +23,7 @@ Sound familiar?
 
 ## One hour of nothing
 
-So I tried something absurdly simple. I set my alarm for 6am — just one hour before my daughter typically wakes up — and I did... nothing productive.
+This became my new experiment. The "6am nothing hour" — a deliberate counterpoint to all the optimization. I wake up at 6am — one or two hours before both my girls wake up — and I do... nothing productive.
 
 No email. No Slack. No LinkedIn scrolling disguised as "staying connected." No to-do list optimization.
 
@@ -63,13 +63,19 @@ I haven't become more productive. My output is roughly the same. I still have th
 
 But I'm *here* more. Present. The fog that I'd accepted as normal turned out to be optional.
 
-My daughter noticed. She said, "Papa, you're funny again." I don't know when I stopped being funny. But she noticed I came back.
+My daughter noticed. She said, "Dad, you're funny again." I don't know when I stopped being funny. But she noticed I came back.
 
 That's the WOW moment that no productivity hack will ever give you. Not the output. The presence.
 
+## The beauty of experiments
+
+I'm constantly searching for new methods, testing what works. Each approach has its pros and cons. The 5AM club gave me discipline and structure when I needed it. The later wake times my Oura suggested helped me recover when my body demanded it. Now, this 6AM nothing hour gives me presence when that's what's missing.
+
+The key is treating each approach as an experiment, not a life sentence. What serves you at 25 might suffocate you at 40. What works when you're building might break when you need to heal.
+
 ## Try it — but try it honestly
 
-If you want to try this, here's what I'd say: don't optimize it. The moment you turn your morning hour into a performance metric, it dies.
+If you want to try this experiment, here's what I'd say: don't optimize it. The moment you turn your morning hour into a performance metric, it dies.
 
 Don't track it in an app. Don't post about it on LinkedIn. Don't set 14 sub-goals for your "intention practice."
 

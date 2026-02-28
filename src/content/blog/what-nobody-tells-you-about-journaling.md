@@ -55,7 +55,7 @@ People argue about this endlessly. Journal in the morning for clarity! No, journ
 
 Here's the truth: the best time to journal is whenever you'll actually do it.
 
-I journal in the morning because it's my anchor habit — before the phone, before email, before the day takes over. But I know people who journal at lunch, after dinner, or right before bed. They all get the benefits.
+I switch up depending on my mood and what the day demands. Sometimes it's morning — before the phone, before email, when I need to set intention. Sometimes it's evening — when I need to process the day and capture those wow moments while they're fresh. Both work.
 
 Consistency beats timing. Every time.
 

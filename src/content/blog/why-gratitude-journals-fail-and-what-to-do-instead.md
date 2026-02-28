@@ -5,7 +5,7 @@ pubDate: '2026-01-28'
 heroImage: '../../assets/blog/gratitude-journals-fail.png'
 ---
 
-I'll be honest with you. I tried gratitude journaling 4 separate times before it stuck. Four times I bought a notebook, wrote "3 things I'm grateful for" on day 1, kept it up for maybe 12 days, and then the notebook disappeared into a drawer.
+I'll be honest with you. I first tried journaling when I was 16. Staring at a blank page, failed completely. Since then I've tried gratitude journaling at least 4 separate times before it stuck. Each time I bought a notebook, wrote "3 things I'm grateful for" on day 1, kept it up for maybe 12 days, and then the notebook disappeared into a drawer.
 
 The fifth time, something was different. And that difference is what I want to share.
 
@@ -35,7 +35,7 @@ That's not gratitude. That's bureaucracy.
 
 What changed for me on attempt number 5 was embarrassingly simple. Instead of listing things I was grateful for, I told myself one story from the day.
 
-Not "I'm grateful for my daughter." Instead: "Today Lana was building something with blocks and it kept falling over. She looked at me, dead serious, and said 'Papa, gravity is not cooperating.' I laughed so hard I spilled my tea."
+Not "I'm grateful for my daughter." Instead: "Today Izi was building something with blocks and it kept falling over. She looked at me, dead serious, and said 'Daddy, gravity is not cooperating.' I laughed so hard I spilled my tea."
 
 That's a story. It's specific. It has a scene, a detail, a feeling. When I read it back weeks later, I'm right there in the room. I can hear her voice. I can feel the tea.
 
@@ -59,6 +59,8 @@ Sometimes it's big: a breakthrough at work, a conversation that shifted my persp
 
 Usually it's small: the way light hit the trees during my morning walk. A stranger who held the door and smiled. The first sip of coffee when the house was still quiet.
 
+And sometimes? The wow comes from an average or even shitty day — because when I reflect on it, it becomes a lesson. That frustrating meeting taught me something about patience. That project failure showed me a blind spot. The wow isn't always positive in the moment, but the reflection transforms it.
+
 The key is specificity. I write 2-4 sentences. Enough to capture the scene. Not a journal entry — a snapshot.
 
 ## What 90 days of stories taught me
@@ -77,7 +79,7 @@ That's not just gratitude. That's attention. That's presence. That's choosing to
 
 ## Try it tonight
 
-Don't buy a journal. Don't download an app. Just grab your phone, open your notes, and before bed tonight, answer: **What was my WOW moment today?**
+Don't buy a journal. Don't download an app. Just grab a pen and paper, or a phone if that's easier, and before bed tonight, answer: **What was my WOW moment today?**
 
 Write 2-3 sentences. Be specific. Include details — what did you see, hear, feel?
 

@@ -7,9 +7,9 @@ heroImage: '../../assets/blog/habit-survives.png'
 
 Let me tell you about my graveyard of abandoned habits.
 
-Meditation: 3 separate attempts. Longest streak: 22 days. Running: started 5 times. Best run: 8km on day 12, then nothing for 6 months. Cold showers: 9 days. Reading 30 minutes before bed: managed 2 weeks before Netflix won.
+Meditation: 3 separate attempts. Longest streak: 22 days. Running: started 5 times. Best run: 12km on a good morning, then nothing for 6 months. Cold showers: 9 days. Reading before bed: simply didn't stick — I fall asleep when I read at night, I'm just too tired.
 
-I'm not bad at discipline. I built a company from zero to 40 people over 10 years. I've shipped products, hit deadlines, pushed through things that seemed impossible. When it comes to work, I'm relentless.
+I'm not bad at discipline. I built Mailigen from zero to 40 people over 10 years, then joined Pipedrive — hundreds of millions in revenue, teams growing from 700 to over 1000 people. Now at Aerones with 300 people, shipping complex robotics products. When it comes to work, I'm relentless.
 
 But personal habits? I'm a disaster.
 
@@ -43,7 +43,7 @@ Here's the pattern I've found in every habit that survived past 90 days in my li
 
 **It has a floor so low you can't fail.**
 
-My gratitude journaling practice — the one that actually stuck — has a floor of writing one sentence. Not three things. Not a page. One sentence. "Lana said something funny about dogs at breakfast." Done. 30 seconds. Habit preserved.
+My gratitude journaling practice — the one that actually stuck — has a floor of writing one sentence. Not three things. Not a page. One sentence. "Izi said something funny about dogs at breakfast." Done. 30 seconds. Habit preserved.
 
 On good days, I write more. Sometimes I write 4-5 sentences, describe the scene, get into it. On bad days — exhausted, frustrated, don't want to do anything — I write one sentence. Still counts. Streak alive.
 

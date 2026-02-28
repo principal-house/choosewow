@@ -45,14 +45,13 @@ That's it. One sentence. Every day. Before the phone.
 
 Here's what I do. It's not impressive. It works.
 
-- **Wake up** (no specific time — sometimes 6am, sometimes 7)
+- **Wake up** — sometimes 5AM, sometimes 6AM, depending on what my body needs
+- **Yoga or HIIT or both** — This is non-negotiable. 13+ years, 365 days a year. I've done yoga on January 1st, with a broken leg, with a broken shoulder. No excuses. This isn't about perfection — it's about showing up.
 - **Journal before phone** — 3-5 minutes. One wow moment from yesterday, one thing I'm looking forward to, one person I appreciate.
-- **Coffee** — I'm not a monster
-- **10 minutes of thinking** — not meditating, just sitting with coffee and thinking about the day ahead. Sometimes this turns into 20 minutes. Sometimes it's 5.
+- **Coffee (after 8:30am)** — Bulletproof coffee is my favorite. The delayed caffeine helps me stay in a natural rhythm longer.
+- **10 minutes of thinking** — not meditating, just sitting and thinking about the day ahead. Sometimes this turns into 20 minutes. Sometimes it's 5.
 
-That's it. Total: 15-20 minutes. No cold showers. No 5am alarm. No green smoothie.
-
-The journal entry is the anchor. Everything else flexes around it.
+Total: 30-45 minutes. But the anchor is movement — yoga or HIIT. Everything else can flex, but that never skips.
 
 ## How to build your anchor habit
 
