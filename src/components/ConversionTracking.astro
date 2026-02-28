@@ -1,0 +1,146 @@
+---
+// ChooseWow Conversion tracking component
+---
+
+<script>
+  // Wait for Umami to load
+  function waitForUmami(callback) {
+    if (typeof window.umami !== 'undefined') {
+      callback();
+    } else {
+      setTimeout(() => waitForUmami(callback), 100);
+    }
+  }
+
+  // Initialize conversion tracking when DOM is loaded
+  document.addEventListener('DOMContentLoaded', function() {
+    waitForUmami(function() {
+      
+      // Track newsletter signup clicks
+      const newsletterButtons = document.querySelectorAll('button[type="submit"], input[type="submit"], .newsletter-form button, .newsletter-cta button');
+      newsletterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          const articleTitle = document.querySelector('h1')?.textContent || window.location.pathname;
+          window.umami.track('newsletter-signup-click', {
+            source: 'choosewow-blog',
+            article: articleTitle.toLowerCase().replace(/[^a-z0-9]/g, '-'),
+            location: this.closest('.newsletter-cta, .newsletter-form')?.className || 'newsletter-section'
+          });
+        });
+      });
+
+      // Track newsletter input focus (engagement signal)
+      const emailInputs = document.querySelectorAll('input[type="email"], input[name="email"]');
+      emailInputs.forEach(input => {
+        input.addEventListener('focus', function() {
+          const articleTitle = document.querySelector('h1')?.textContent || window.location.pathname;
+          window.umami.track('newsletter-engagement', {
+            source: 'choosewow-blog',
+            article: articleTitle.toLowerCase().replace(/[^a-z0-9]/g, '-'),
+            action: 'email-input-focus'
+          });
+        });
+      });
+
+      // Track WowDay cross-promotion clicks
+      const wowdayLinks = document.querySelectorAll('a[href*="wowday"]');
+      wowdayLinks.forEach(link => {
+        link.addEventListener('click', function() {
+          const articleTitle = document.querySelector('h1')?.textContent || window.location.pathname;
+          window.umami.track('wowday-promotion-click', {
+            source: 'choosewow-blog',
+            article: articleTitle.toLowerCase().replace(/[^a-z0-9]/g, '-'),
+            destination: this.href
+          });
+        });
+      });
+
+      // Track social media link clicks
+      const socialLinks = document.querySelectorAll('a[href*="twitter.com"], a[href*="linkedin.com"], a[href*="x.com"], a[href*="instagram.com"]');
+      socialLinks.forEach(link => {
+        link.addEventListener('click', function() {
+          const platform = this.href.includes('linkedin') ? 'linkedin' : 
+                          this.href.includes('instagram') ? 'instagram' : 'twitter';
+          const articleTitle = document.querySelector('h1')?.textContent || window.location.pathname;
+          window.umami.track('social-link-click', {
+            source: 'choosewow-blog',
+            platform: platform,
+            article: articleTitle.toLowerCase().replace(/[^a-z0-9]/g, '-'),
+            destination: this.href
+          });
+        });
+      });
+
+      // Track scroll depth (engagement metric)
+      let maxScroll = 0;
+      let scrollTracked = {25: false, 50: false, 75: false, 100: false};
+      
+      window.addEventListener('scroll', function() {
+        const scrollPercent = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
+        maxScroll = Math.max(maxScroll, scrollPercent);
+        
+        // Track scroll milestones
+        [25, 50, 75, 100].forEach(milestone => {
+          if (scrollPercent >= milestone && !scrollTracked[milestone]) {
+            scrollTracked[milestone] = true;
+            const articleTitle = document.querySelector('h1')?.textContent || window.location.pathname;
+            window.umami.track('scroll-depth', {
+              source: 'choosewow-blog',
+              depth: milestone,
+              article: articleTitle.toLowerCase().replace(/[^a-z0-9]/g, '-')
+            });
+          }
+        });
+      });
+
+      // Track time on page (engagement metric)
+      let startTime = Date.now();
+      let timeTracked = {30: false, 60: false, 180: false, 300: false}; // 30s, 1m, 3m, 5m
+      
+      setInterval(function() {
+        const timeSpent = Math.floor((Date.now() - startTime) / 1000);
+        
+        [30, 60, 180, 300].forEach(milestone => {
+          if (timeSpent >= milestone && !timeTracked[milestone]) {
+            timeTracked[milestone] = true;
+            const articleTitle = document.querySelector('h1')?.textContent || window.location.pathname;
+            window.umami.track('time-on-page', {
+              source: 'choosewow-blog',
+              duration: milestone,
+              article: articleTitle.toLowerCase().replace(/[^a-z0-9]/g, '-')
+            });
+          }
+        });
+      }, 10000); // Check every 10 seconds
+
+      // Track article sharing attempts
+      if (navigator.share) {
+        window.addEventListener('beforeunload', function() {
+          // This is a simple way to track potential sharing - more sophisticated tracking would use Share API
+          const articleTitle = document.querySelector('h1')?.textContent || window.location.pathname;
+          window.umami.track('article-session-end', {
+            source: 'choosewow-blog',
+            article: articleTitle.toLowerCase().replace(/[^a-z0-9]/g, '-'),
+            timeSpent: Math.floor((Date.now() - startTime) / 1000),
+            maxScroll: maxScroll
+          });
+        });
+      }
+
+      // Track external link clicks
+      const externalLinks = document.querySelectorAll('a[href^="http"]:not([href*="choosewow.com"]):not([href*="wowday.life"])');
+      externalLinks.forEach(link => {
+        link.addEventListener('click', function() {
+          const articleTitle = document.querySelector('h1')?.textContent || window.location.pathname;
+          window.umami.track('external-link-click', {
+            source: 'choosewow-blog',
+            article: articleTitle.toLowerCase().replace(/[^a-z0-9]/g, '-'),
+            destination: this.href,
+            linkText: this.textContent.trim()
+          });
+        });
+      });
+
+    });
+  });
+</script>

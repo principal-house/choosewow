@@ -1,8 +1,8 @@
 ---
 interface Props { compact?: boolean; }
 const { compact = false } = Astro.props;
-const LISTMONK_URL = "https://mail.principal.house";
-const LIST_UUID = "8084bc39-7292-4443-ab90-c09cf4bbbb9e"; // ChooseWow list
+const MAUTIC_URL = "https://mail.principal.house/api/subscribe.php";
+const BRAND = "choosewow";
 ---
 
 <div class="nl-wrapper">
@@ -16,7 +16,7 @@ const LIST_UUID = "8084bc39-7292-4443-ab90-c09cf4bbbb9e"; // ChooseWow list
 	<p class="nl-message" id="nl-message" style="display:none;"></p>
 </div>
 
-<script define:vars={{ LISTMONK_URL, LIST_UUID }}>
+<script define:vars={{ MAUTIC_URL, BRAND }}>
 	const form = document.getElementById('nl-form');
 	const msg = document.getElementById('nl-message');
 	const btn = document.getElementById('nl-btn');
@@ -31,20 +31,24 @@ const LIST_UUID = "8084bc39-7292-4443-ab90-c09cf4bbbb9e"; // ChooseWow list
 		btn.textContent = '...';
 
 		try {
-			const res = await fetch(`${LISTMONK_URL}/subscription/form`, {
+			const res = await fetch(MAUTIC_URL, {
 				method: 'POST',
-				mode: 'no-cors',
-				headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-				body: new URLSearchParams({ email, l: LIST_UUID, nonce: '' }),
+				headers: { 'Content-Type': 'application/json' },
+				body: JSON.stringify({ email, brand: BRAND }),
 			});
-			// no-cors means we can't read the response, but the subscription is created
-			form.style.display = 'none';
-			msg.style.display = 'block';
-			msg.textContent = '🎉 Check your inbox to confirm your subscription!';
-			msg.className = 'nl-message nl-success';
+			const data = await res.json();
+			
+			if (data.success) {
+				form.style.display = 'none';
+				msg.style.display = 'block';
+				msg.textContent = '🎉 Check your inbox to confirm your subscription!';
+				msg.className = 'nl-message nl-success';
+			} else {
+				throw new Error(data.error || 'Subscription failed');
+			}
 		} catch (err) {
 			msg.style.display = 'block';
-			msg.textContent = 'Something went wrong. Please try again.';
+			msg.textContent = err.message || 'Something went wrong. Please try again.';
 			msg.className = 'nl-message nl-error';
 			btn.disabled = false;
 			btn.textContent = 'Join';

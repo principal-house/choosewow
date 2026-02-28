@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #faf8f3;
+        }
+        .header {
+            text-align: center;
+            padding: 30px 0;
+            border-bottom: 2px solid #c99a2e;
+            margin-bottom: 30px;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: #c99a2e;
+            margin-bottom: 10px;
+        }
+        .title {
+            margin: 0;
+            font-size: 28px;
+            color: #1a1a1a;
+            font-weight: 700;
+        }
+        .button {
+            display: inline-block;
+            background: linear-gradient(135deg, #c99a2e, #e8b84b);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            margin: 20px 0;
+        }
+        .content {
+            padding: 30px 0;
+        }
+        .highlight {
+            background: rgba(232, 184, 75, 0.3);
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        .footer {
+            padding-top: 30px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 14px;
+            color: #666;
+            text-align: center;
+            margin-top: 30px;
+        }
+        .gift-box {
+            background: white;
+            padding: 20px;
+            border: 2px solid #c99a2e;
+            border-radius: 8px;
+            margin: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">✦ ChooseWow</div>
+        <h1 class="title">Almost there!</h1>
+    </div>
+    
+    <div class="content">
+        <p>Hey there,</p>
+        
+        <p>Thanks for joining the ChooseWow community. I just need you to <span class="highlight">confirm your email address</span> to make sure my weekly insights reach you.</p>
+        
+        <p>Click this button to confirm your subscription:</p>
+        
+        <p style="text-align: center;">
+            <a href="{{ .OptinURL }}" class="button">Yes, I want ChooseWow insights →</a>
+        </p>
+        
+        <div class="gift-box">
+            <h3 style="margin: 0 0 10px 0; color: #c99a2e;">🎁 Your Free Guide Waiting</h3>
+            <p style="margin: 0; font-size: 16px;"><strong>"The 5-Minute Gratitude Reset"</strong><br>
+            <em>A simple daily practice that actually sticks</em></p>
+        </div>
+        
+        <p>This isn't another complicated system. It's 5 minutes that can shift how you see your entire day.</p>
+        
+        <p>Once you confirm, you'll get the guide immediately, plus weekly stories about finding WOW moments in ordinary days.</p>
+        
+        <p>Looking forward to sharing this journey with you.</p>
+        
+        <p>— Janis</p>
+        
+        <p style="font-size: 14px; color: #666; margin-top: 30px;">
+            <em>P.S. — If the button doesn't work, copy and paste this link:<br>
+            {{ .OptinURL }}</em>
+        </p>
+    </div>
+    
+    <div class="footer">
+        <p>© 2026 Janis Rozenblats | ChooseWow.com</p>
+    </div>
+</body>
+</html>
